@@ -9,86 +9,112 @@
     <!-- Page Info -->
     <title>Banglet - Bracelet with a BANG</title>
     <meta name="author" content="Marcin Kierebinski">
-    <meta name="description" content="Banglet Concept">
+    <meta name="description" content="Banglet">
 
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/agile.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dark-neons.css' %}">
   </head>
 
   <body>
-    <div class='topnav'>
-      <a href="/"><h3>Home</h3></a>
-      <a href="/kvp/"><h3>KVP</h3></a>
-      <a href="/product/"><h3>Product</h3></a>
-    </div>
-    <div class='hero'>
-      <section class='responsive_grid'>
+    <header>
+        <!-- <img src="{% static 'images/logo.png' %}" class="logo" > -->
+        <h1 class="container" >Banglet</h1>
+        <nav class="container">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/kvp/">KVP</a></li>
+                <li><a href="/product/">Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class='container hero'>
+      <section class='flex-grid'>
       <div>
-        <h1>Bangle Care</h1>
-        <h3>Concept Idea</h3>
-        <p>Bangle is a senior care smart bracelet that will help caregivers to monitor location of their older relatives. </p>
+        <h3>Design Concept</h3>
+        <p>Banglet is a smart bracelet product that offers venues access to VIP attendee locations to enable services such as concierge (food and drink delivery). When it comes to end-users, the bracelet could enable touch payments, seamless identity check for access to VIP-restricted areas and ordering drinks, as well as potentially an option to find points and persons of interest (bathrooms, medical team, other bracelet users).</p>
       </div>
-      <img src="{% static 'images/senior.jpg' %}">
+      <img src="{% static 'images/smartwatch_app.png' %}">
         </section>
     </div>
 
-    <section class='padding-responsive'>
-      <div class='separator'>Motivation</div>
+    <div class='separator'>Motivation</div>
   
-        <p>Doesn't it feel great to know our loved ones are safe and well? Of course, but living separately might not let you react quick enough. In case something happens, you are likely going to find out about it after the fact. Getting notified early can make a tremendous difference. It could give you time necessary to react and prevent a serious injury</p>
-  
-        <h4 class=''> Features </h4>
-        <ol>
-          <li> Track user location </li>
-          <li> Ergonomic Design </li>
-          <li> Easy Setup </li>
-        </ol>
-  
-        <div class='separator'>Meet the Team</div>
-        <p> We are a team of engineers dedicated to creating a feeling of safety and peace of mind for seniors and their caregivers. </p>
-        <table class='margin-top-xl'>
-          <thead>
-            <tr>
-              <th class='small'> First Name </th>
-              <th class='medium'> Last Name </th>
-              <th class='large'> Email </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td> Marcin </td>
-              <td> Kierebinski </td>
-              <td> mrkiereb@ucsd.edu </td>
-            </tr>
-            <tr>
-              <td> Nicolas </td>
-              <td> Munoz </td>
-              <td> nimuno@ucsd.edu </td>
-            </tr>
-            <tr>
-              <td> Rusul </td>
-              <td> Albusultan </td>
-              <td> rualbu@ucsd.edu </td>
-            </tr>
-            <tr>
-              <td> Raymond </td>
-              <td> Urbina </td>
-              <td> raurbin@ucsd.edu </td>
-            </tr>
-          </tbody>
-        </table>
+    <p class="container">Venues often have hundreds to thousands of people attending and it can be tricky for attendees to find the points of interest such as certain stages, food trucks or bars. Even having the online map of the venue it might be difficult to decipher the current location and figure out which way you’re supposed to go and which sections you can access. Another common issue is getting separated from others by accident. GPS and location sharing with friends is simply not accurate enough and doesn’t have the flexibility to include other attendees. Leaving the conversation to get food or a drink is frustrating and so is looking through your phone to find the tickets.</p>
 
-        <div class='separator'>
-           Coming Up
-        </div>
-        <ol>
-          <li> Survey </li>
-          <li> Competition Overview </li>
-          <li> Prototype Media </li>
-          <li> Customer Stories </li>
+    <div class='container'>
+      <h4> Features </h4>
+      <ol>
+      <li> Track user location
+        <ol style="list-style-type: lower-alpha;">
+            <li>Offering the concierge/food delivery service to VIP customers</li>
+            <li>Integrated with the indoors map (possibly)</li>
+            <li>Can be used to gather friends together if some are lost or want to regroup</li>
+            </ol>
+      </li>
+      <li> Hands-free experience
+        <ol style="list-style-type: lower-alpha;">
+            <li>ID for purchases</li>
+            <li>Ticket info for access to restricted sections</li>
+            <li>Payment info</li>
         </ol>
-        <p>Built based on ece140_cloud_deployment repo:<a href="https://github.com/ramujin/ece140_cloud_deployment">https://github.com/ramujin/ece140_cloud_deployment</a></p>
-      </section>
-  
-  </body>
+      </li>
+      <li> Skins can be added to bracelets as an accessory to make the bracelet aesthetically interesting </li>
+      </ol>
+    </div>
+
+    <div class='separator'>Meet the Team</div>
+    
+    <p class='container'> We are a team of engineers dedicated to creating a feeling of safety and peace of mind for seniors and their caregivers. </p>
+    <br><br>
+    <table class='container'>
+      <thead>
+        <tr>
+          <th class='small'> First Name </th>
+          <th class='medium'> Last Name </th>
+          <th class='large'> Email </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Marcin </td>
+          <td> Kierebinski </td>
+          <td> mrkiereb@ucsd.edu </td>
+        </tr>
+        <tr>
+          <td> Nicolas </td>
+          <td> Munoz </td>
+          <td> nimuno@ucsd.edu </td>
+        </tr>
+        <tr>
+          <td> Rusul </td>
+          <td> Albusultan </td>
+          <td> rualbu@ucsd.edu </td>
+        </tr>
+        <tr>
+          <td> Raymond </td>
+          <td> Urbina </td>
+          <td> raurbin@ucsd.edu </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class='separator'>
+       Coming Up
+    </div>
+    <div class='container'>
+    <ol>
+      <li> Survey </li>
+      <li> Competition Overview </li>
+      <li> Prototype Media </li>
+      <li> Customer Stories </li>
+    </ol>
+    </div>
+    <br><br>
+    <div class='container'>
+    <footer>
+        <p>2022 by Marcin Kierebinski</p>
+    </footer>
+    </div>
+</body>
 </html>
