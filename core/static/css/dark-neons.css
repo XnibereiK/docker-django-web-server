@@ -5,7 +5,7 @@
   --black: #070B0D;
   --margin: 1rem;
   --base-font-size: 14pt;
-  --border-radius: 2px;
+  --border-radius: 2rem;
   --rounded-radius: 4rem;
   --padding: 0.5rem 1rem;
   --font: Constantia;
@@ -34,6 +34,7 @@ h2 {
 }
 h3 {
   font-size: calc(1rem + 2.1vw);
+  text-align: center;
 }
 h4 {
   font-size: calc(1rem + 1.5vw);
@@ -70,6 +71,7 @@ table td {
   border: 1px solid var(--white);
   color: var(--dark);
   font-size: calc(0.8rem + 1vw);
+  word-wrap: break-word
 }
 table tr:nth-child(odd) {
   background-color: var(--white);
@@ -132,24 +134,30 @@ color: var(--dark);
 
 .container{
   padding: 0 1em;
-  max-width: 100rem;
-  margin: 0 auto;
-
-  /* background-color: var(--dark); */
-  /* border: 2px solid red; */
+  width: 85%;
+  margin: 0.3em 0.3em 1em 0;
+  position: relative;
+  display: block;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media (min-width: 40em){
+@media (min-width: 80em){
   .flex-grid{
     display: flex;
-    gap: 2em;
+    gap: 1em;
+    flex: 1;
   }
+}
+
+.btn h3{
+  background: var(--light);  
+  text-align: center;
 }
 
 img {
   display: block;
   object-fit: cover;
-  /* max-width:60rem; */
-  /* max-height: 30rem; */
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -158,7 +166,6 @@ img {
   max-height: 80vw;
   border-radius: 2em;
 }
-
 
 /* separator */
 .separator {

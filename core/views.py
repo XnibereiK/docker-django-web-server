@@ -8,3 +8,6 @@ def kvp(request):
 
 def product(request):
     return render(request, 'product.html')
+
+def product_ui(request):
+    return render(request, 'ui.html')

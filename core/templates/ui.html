@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Banglet - Bracelet with a BANG</title>
+    <meta name="author" content="Marcin Kierebinski">
+    <meta name="description" content="User Interface">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dark-neons.css' %}">
+  </head>
+
+  <body>
+    <header>
+      <!-- <img src="{% static 'images/logo.png' %}" class="logo" > -->
+      <h1 class="container" >Banglet</h1>
+      <nav class="container">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/kvp/">KVP</a></li>
+              <li><a href="/product/">Product</a></li>
+          </ul>
+      </nav>
+    </header>
+  
+    <div class='container hero'>
+      <section class='flex-grid'>
+      <div>
+        <h3>User Interface</h3>
+        <p>Through our UI, we wish to express our focus on the hassle-free experience for the user. Since our system will manage a large amount and variety of data, our UI will have to consist of different views. The current design ideas are presented in the sketches below.</p>
+      </div>
+        </section>
+      </div>
+      <div class='separator'>User Interface - Customer View</div>
+      <div class='container'>
+        <p>Venues often have hundreds of people they have to manage and even more they need to serve in order to facilitate easy data capture and its seamless integration to the current workflows, we're going to provide the customers with only 2 main views after login - dashboard and event editing </p>
+        <img src="{% static 'images/UI_customer_view.png' %}">
+      </div>
+      <div class='separator'>User Interface - End User View</div>
+      <div class='container'>
+        <p>In order to make the experience of going to the event as pleasant as possible for VIP customers, the bracelet will allow access to certain features through the website, but our goal is to implement features without necessitating a need for display (of course after registration). Website view would only really be used for editing preferences and utilizing the indoor navigation function in 5G enabled locations.</p>
+        <img src="{% static 'images/UI_user_view.png' %}">
+      </div>
+
+    <br><br>
+    <div class='container'>
+    <footer>
+        <p>2022 by Marcin Kierebinski</p>
+    </footer>
+    </div>
+  </body>
+</html>

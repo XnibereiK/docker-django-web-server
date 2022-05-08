@@ -30,12 +30,14 @@
 
     <div class='container hero'>
       <section class='flex-grid'>
-      <div>
-        <h3>Design Concept</h3>
-        <p>Banglet is a smart bracelet product that offers venues access to VIP attendee locations to enable services such as concierge (food and drink delivery). When it comes to end-users, the bracelet could enable touch payments, seamless identity check for access to VIP-restricted areas and ordering drinks, as well as potentially an option to find points and persons of interest (bathrooms, medical team, other bracelet users).</p>
-      </div>
-      <img src="{% static 'images/smartwatch_app.png' %}">
-        </section>
+        <div class="container" >
+          <h3>Design Concept</h3>
+          <p>Banglet is a smart bracelet product that offers venues access to VIP attendee locations to enable services such as concierge (food and drink delivery). When it comes to end-users, the bracelet could enable touch payments, seamless identity check for access to VIP-restricted areas and ordering drinks, as well as potentially an option to find points and persons of interest (bathrooms, medical team, other bracelet users).</p>
+        </div>
+        <div class="container">
+          <img style="margin-top: 4em" src="{% static 'images/smartwatch_app.png' %}">
+        </div>
+      </section>
     </div>
 
     <div class='separator'>Motivation</div>
@@ -47,16 +49,16 @@
       <ol>
       <li> Track user location
         <ol style="list-style-type: lower-alpha;">
-            <li>Offering the concierge/food delivery service to VIP customers</li>
-            <li>Integrated with the indoors map (possibly)</li>
-            <li>Can be used to gather friends together if some are lost or want to regroup</li>
-            </ol>
+          <li>Offering the concierge/food delivery service to VIP customers</li>
+          <li>Integrated with the indoors map (possibly)</li>
+          <li>Can be used to gather friends together if some are lost or want to regroup</li>
+        </ol>
       </li>
       <li> Hands-free experience
         <ol style="list-style-type: lower-alpha;">
-            <li>ID for purchases</li>
-            <li>Ticket info for access to restricted sections</li>
-            <li>Payment info</li>
+          <li>ID for purchases</li>
+          <li>Ticket info for access to restricted sections</li>
+          <li>Payment info</li>
         </ol>
       </li>
       <li> Skins can be added to bracelets as an accessory to make the bracelet aesthetically interesting </li>
@@ -67,7 +69,8 @@
     
     <p class='container'> We are a team of engineers dedicated to creating a feeling of safety and peace of mind for seniors and their caregivers. </p>
     <br><br>
-    <table class='container'>
+    <div class='container'>
+    <table>
       <thead>
         <tr>
           <th class='small'> First Name </th>
@@ -96,8 +99,14 @@
           <td> Urbina </td>
           <td> raurbin@ucsd.edu </td>
         </tr>
+        <tr>
+          <td> Karen </td>
+          <td> Hernandez </td>
+          <td> kahern@ucsd.edu </td>
+        </tr>
       </tbody>
     </table>
+    </div>
 
     <div class='separator'>
        Coming Up

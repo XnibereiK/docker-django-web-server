@@ -32,10 +32,17 @@
       <section class='flex-grid'>
       <div>
         <h3>Product Page</h3>
-        <p>Venues are often looking for ways to improve the experience of attendees during events. Our solution takes a B2B perspective by targeting festival/concert venues as our customers and aiming to offer them access to VIP attendee location to enable services such as concierge (food and drink delivery). This would be achieved thanks to UWB technology that allows for precise tracking indoors. It can be leveraged to create a platform for attendees to be able to find people and navigate around venues easily. This could also enable a concierge-type service for VIPs (e.g. order food/drinks to be delivered directly). Friends before attending events can link their bracelets together and recorded information like location tracking will be communicated between phones and bracelets of the friends. Having all the necessary information stored on the bracelet would allow participants to not worry in case the phone battery dies, because payment, identification, and ticket access can be stored in the database for the attendee. This communication of data allows attendees to get the next-level hassle free and safe experience during the event. Adding custom skins we design will also allow users to feel more individualized at venues and be able to add another sense of fashion to attending events while promoting health and safety. After the concert it would essentially become a souvenir or a collectible item that would have unique designs for each of the festivals.</p>
+        <p>Venues are often looking for ways to improve the experience of attendees during events. Our solution takes a B2B perspective by targeting festival/concert venues as our customers and aiming to offer them access to VIP attendee location to enable services such as concierge (food and drink delivery). This would be achieved thanks to UWB technology that allows for precise tracking indoors. It can be leveraged to create a platform for attendees to be able to find people and navigate around venues easily. </p>
+        <p>This could also enable a concierge-type service for VIPs (e.g. order food/drinks to be delivered directly). Friends before attending events can link their bracelets together and recorded information like location tracking will be communicated between phones and bracelets of the friends. Having all the necessary information stored on the bracelet would allow participants to not worry in case the phone battery dies, because payment, identification, and ticket access can be stored in the database for the attendee.</p>
+        <p>This communication of data allows attendees to get the next-level hassle free and safe experience during the event. Adding custom skins we design will also allow users to feel more individualized at venues and be able to add another sense of fashion to attending events while promoting health and safety. After the concert it would essentially become a souvenir or a collectible item that would have unique designs for each of the festivals.</p>
       </div>
-      <img src="{% static 'images/concert.jpg' %}">
+      <img style="margin-top: 2em; margin-bottom: 2em"; src="{% static 'images/concert.jpg' %}">
       </section>
+    </div>
+    <div style="margin-top: 4em"; class="container hero">
+      <div class="btn">
+        <a href="/product/ui"><h3>Check out our UI</h3></a>
+      </div>
     </div>
     <div class='separator'>Empathy Maps</div>
     <div class='container'>
@@ -44,7 +51,7 @@
     </div>
 
     <div class='separator'>Product Technical Considerations</div>
-      <div class='container'>  
+      <div class='container'>
       <p>We will be using UWB technology as well as bluetooth (BLE for communication with users phone, UWB can be set up with beacons around the venue and you can tell with .1m precision where the person is, much better than GPS performance-wise)</p>
         <h4> Features </h4>
         <ol>
