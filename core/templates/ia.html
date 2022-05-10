@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Banglet - Bracelet with a BANG</title>
+    <meta name="author" content="Marcin Kierebinski">
+    <meta name="description" content="User Interface">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dark-neons.css' %}">
+  </head>
+
+  <body>
+    <header>
+      <!-- <img src="{% static 'images/logo.png' %}" class="logo" > -->
+      <h1 class="container" >Banglet</h1>
+      <nav class="container">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/kvp/">KVP</a></li>
+              <li><a href="/product/">Product</a></li>
+          </ul>
+      </nav>
+    </header>
+  
+    <div class='container hero'>
+      <section class='flex-grid'>
+      <div>
+        <h3>Information Architecture</h3>
+        <p>We're delivering a real time location tracking system alongside a touch payment system and ID verification/ ticket verification all for the event organizer to have the ability to view data about the event in real time. This puts a significant expectations on the database setup for this project, which will be the backbone for our information architecture. The frontend has to be an extension of this backbone, and we're putting emphasis on readability and intuitiveness of user experience with this architecture. </p>
+      </div>
+        </section>
+      </div>
+      <div class='separator'>Information Architecture - Database Map</div>
+      <div class='container'>
+        <p>We're going to be dealing with a lot of data so an efficient data architecture is crucial. This is the current design we are considering. </p>
+        <img src="{% static 'images/information_architecture.png' %}">
+      </div>
+    <br><br>
+    
+    <div class='separator'>Commentary</div>
+      <div class='container hero'>
+        <h4 style='color: var(--dark) !important;'>What basic information does a typical user need to have access to on first interaction with your product?</h4>
+        <p>The first interaction with the product is the landing page. This is a place where they will be able to read and see what the product is and based on this description they should be able to know what role they can register for.</p>
+        <p>Afterwards, each category of website users will be able to view their respective dashboards. On the dashboard page, they will see the actions they can take and have basic information they filled in registering for the website alongside relevant statistics regarding their data.</p>
+        <h4 style='color: var(--dark) !important;'>What IA Design Principles (Dan Brown) are important for your product?</h4>
+        <ol style='color: var(--dark) !important;'>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Principle of Focused Navigation</h5>
+            <p>The value of our system lies in being able to present complex data to the user in an appoachable and understandable manner. This is why focused navigation is crucial.</p>
+          </li>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Principle of Choices</h5>
+            <p>While landing page is something that all users will have access to, the rest of the information that can be useful together with the actions that can be executed will only be visible to the intended user. This way noone has access to actions they should not take, but also they will only be exposed to relevant information, which will greatly reduce the headache of figuring out what they can and what they can't do.</p>
+          </li>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Principle of Objects</h5>
+            <p>Each event is treated like an object that has its own lifecycle and each of them is unique, while following the same, consistent structure. List of past events will be implemented to allow all kinds of users to go back to a specific event for reference if needed.</p>
+          </li>
+        </ol>
+        <h4 style='color: var(--dark) !important;'>Which structural Organizational Principles make the most the sense for your product?</h4>
+        <ol>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Chronological Model</h5>
+            <p>On the higher level of informational hierarchy, we'll have a list of events, which will be sorted based on the date they have been hosted. This is already implemented in other event management sites such as <a href='https://www.eventbrite.com/o/the-basement-uc-san-diego-8131200746'> Eventbrite</a></p>
+          </li>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Matrix Model</h5>
+            <p>Ideally, the list of sections would appear to the event organizer in a matrix fashion, where they could choose the suites from the grid that organizes them according to the order they put them in.</p>
+          </li>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Topical Model</h5>
+            <p>When it comes to the statistics about the event being displayed on the dashboard, they will be sorted based on the topic to make them more organized and user-friendly.</p>
+          </li>
+        </ol>
+      </div>
+      <div class='separator'>Commentary on Principles of Visual Hierarchy</div>
+      <div class='container'>
+        <p>Visual Hierarchy can enhance user experience when it comes to making things intuitive and obvious without the need to read anything</p>
+          <h4> Principles Used </h4>
+          <ol>
+            <li>
+              <h5>Color and Contrast</h5>
+              <p>Contrast can be seen on every page of this website. It makes anything that is important pop out.</p>
+            </li>
+            <li>
+              <h5>Fonts</h5>
+              <p>Fonts guide the design. The smaller the font, the more specific the text. Title is the largest, then come headers for sections and headers for subsections. Lastly, we have normal paragraph text. </p>
+            </li>
+            <li>
+              <h5>Space</h5>
+              <p>When presenting the most important information about the product, we want the user to think only about this, no matter what happens next. This is why on the landing page, we can see space after the product intro and tagline. </p>
+            </li>
+          </ol>
+          </section>
+        </div>
+    <div class='container'>
+    <footer>
+        <p>2022 by Marcin Kierebinski</p>
+    </footer>
+    </div>
+  </body>
+</html>

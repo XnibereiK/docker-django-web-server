@@ -20,9 +20,11 @@ a{
   color: var(--white);
   text-decoration: none;
 }
+
 p,h2,h3,h4,h5,table,ol,ul,li{
   color: var(--white);
 }
+
 h1{
   font-size: calc(1.5rem + 2.5vw);
   vertical-align: middle;
@@ -97,10 +99,6 @@ nav a:hover{
   color: var(--light);
 }
 
-.hero p,h3{
-  color: var(--dark);
-}
-
 /* sections */
 header{
   background-color: var(--dark);
@@ -132,6 +130,27 @@ color: var(--dark);
   border: 1rem  solid var(--dark);
 }
 
+.hero p,li,h3,h4,h5{
+  color: var(--dark);
+}
+
+.hero a{
+  color: var(--white);
+}
+
+.hero a:hover{
+  color: var(--dark);
+  text-shadow: 0 0 1em var(--white), 0 0 1.5em var(--light);
+}
+
+.dark p,h1,h2,h3,h4,h5,li,ol,ul{
+  color: var(--dark) !important;
+}
+
+.white p,h1,h2,h3,h4,h5,li,ol,ul{
+  color: var(--white) !important;
+}
+
 .container{
   padding: 0 1em;
   width: 85%;
@@ -150,9 +169,18 @@ color: var(--dark);
   }
 }
 
-.btn h3{
+.btn{
   background: var(--light);  
+}
+
+.btn h3{
   text-align: center;
+  color: var(--dark);
+}
+
+.btn h3:hover{
+  text-shadow: 0 0 0.6em var(--white), 0 0 1em var(--light); 
+  color: var(--white);
 }
 
 img {

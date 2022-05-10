@@ -11,3 +11,6 @@ def product(request):
 
 def product_ui(request):
     return render(request, 'ui.html')
+
+def product_ia(request):
+    return render(request, 'ia.html')
