@@ -14,3 +14,6 @@ def product_ui(request):
 
 def product_ia(request):
     return render(request, 'ia.html')
+
+def product_interactions(request):
+    return render(request, 'interactions.html')

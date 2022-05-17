@@ -23,5 +23,6 @@ urlpatterns = [
     path('kvp/',views.kvp,name='kvp'),
     path('product/',views.product,name='product'),
     path('product/ui/',views.product_ui,name='product'),
-    path('product/ia/',views.product_ia,name='product')
+    path('product/ia/',views.product_ia,name='product'),
+    path('product/interactions/',views.product_interactions,name='product')
 ]

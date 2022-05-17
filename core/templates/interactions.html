@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Banglet - Bracelet with a BANG</title>
+    <meta name="author" content="Marcin Kierebinski">
+    <meta name="description" content="User Interface">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dark-neons.css' %}">
+  </head>
+
+  <body>
+    <header>
+      <!-- <img src="{% static 'images/logo.png' %}" class="logo" > -->
+      <h1 class="container" >Banglet</h1>
+      <nav class="container">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/kvp/">KVP</a></li>
+              <li><a href="/product/">Product</a></li>
+          </ul>
+      </nav>
+    </header>
+    <h1 class="container" >User Interactions</h1>
+    <section class='flex-grid'>  
+    <div class='container hero'>
+        <div>
+          <h3>Event Organizer</h3>
+          <p>Through our UX, we wish to express our focus on the hassle-free experience for end users. Following this philosophy, we want eliminate the common pain points that commonly accompany such events both for the user and the event organizer. Let's talk. How many times did you:</p>
+          <li style="color: var(--dark) !important;">not know where to go/ how to get somewhere?</li>
+          <li style="color: var(--dark) !important;">have trouble finding somebody?</li>
+          <li style="color: var(--dark) !important;">worry about your wallet (credit card, ID, tickets)?</li>
+          <li style="color: var(--dark) !important;">want to order something delivered to you directly?</li>
+          <br>
+        </div>
+    </div>
+    </section>
+    <div class='container hero'>
+        <div>
+          <h3>VIP Attendee</h3>
+          <p>Through our UX, we wish to express our focus on the hassle-free experience for end users. Following this philosophy, we want eliminate the common pain points that commonly accompany such events both for the user and the event organizer. Let's talk. How many times did you:</p>
+          <li style="color: var(--dark) !important;">not know where to go/ how to get somewhere?</li>
+          <li style="color: var(--dark) !important;">have trouble finding somebody?</li>
+          <li style="color: var(--dark) !important;">worry about your wallet (credit card, ID, tickets)?</li>
+          <li style="color: var(--dark) !important;">want to order something delivered to you directly?</li>
+          <br>
+        </div>
+    </div>
+    </section>
+    <div class='separator'>Location Services</div>
+    <div class='container'>
+    <p>We will be using UWB technology as well as bluetooth (BLE for communication with users phone, UWB can be set up with beacons around the venue and you can tell with .1m precision where the person is, much better than GPS performance-wise)</p>
+      <h4> Benefits </h4>
+      <ol>
+        <li> Event Organizer - Track user location
+          <ol style="list-style-type: lower-alpha;">
+              <li></li>
+              <li>Integrated with the indoors map (possibly)</li>
+              <li>Can be used to gather friends together if some are lost or want to regroup</li>
+              </ol>
+        </li>
+        <li> Hands-free experience
+          <ol style="list-style-type: lower-alpha;">
+              <li>ID for purchases</li>
+              <li>Ticket info for access to restricted sections</li>
+              <li>Payment info</li>
+          </ol>
+        </li>
+        <li> Skins can be added to bracelets as an accessory to make the bracelet aesthetically interesting </li>
+      </ol>
+    </div>
+
+    <br><br>
+    <div class='container'>
+    <footer>
+        <p>2022 by Marcin Kierebinski</p>
+    </footer>
+    </div>
+  </body>
+</html>
