@@ -170,6 +170,7 @@ color: var(--dark);
   }
 }
 
+/* remember me */
 @media (min-width: 50em){
   .flex-2-grid{
     display: flex;
