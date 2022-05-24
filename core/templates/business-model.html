@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Banglet - For a Better VIP Experience</title>
+    <meta name="author" content="Marcin Kierebinski">
+    <meta name="description" content="Banglet">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dark-neons.css' %}">
+  </head>
+
+  <body>
+    <header>
+      <!-- <img src="{% static 'images/logo.png' %}" class="logo" > -->
+      <h1 class="container" >Banglet</h1>
+      <nav class="container">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/kvp/">KVP</a></li>
+              <li><a href="/product/">Product</a></li>
+          </ul>
+      </nav>
+    </header>
+  
+    <div class='container hero'>
+    <section class='flex-grid'>
+      <div>
+        <h3>Business Model</h3>
+        <p>In this section we're presenting our proposed revenue and cost model based on the sports arenas examples. In particular, we're showing our estimates for MLB and NFL games.</p>
+        <img src="{% static 'images/revenue_model.png' %}" style="width: 80%">
+        <br><br>
+      </div>
+    </section>
+    </div>
+    <div class='separator'>Revenue Model</div>
+    <div class='container'>
+        <h3 style="text-align: left">Primary Service</h3>
+        <p>For Stadiums/Arenas the revenue model that will be used for our product and services will be a 10% commission collected on VIP/Suite total sales per event. There will be a standard charge for the equipment, such as for the bracelets and nodes. This data will be used to increase profits and revenue at events.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                   <th style= "text-align: center;" colspan="2"> MLB Estimates </th>
+                </tr>
+              </thead>
+            <thead>
+              <tr>
+                <th class='small'> Revenue Item </th>
+                <th class='medium'> Value </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Fans per game </td>
+                <td> 28,204 </td>
+              </tr>
+              <tr>
+                <td> Ticket Price </td>
+                <td> $32.99 </td>
+              </tr>
+              <tr>
+                <td> Ticket Revenue per Game </td>
+                <td> $930,449.96 </td>
+              </tr>
+              <tr>
+                <td> Food and Merchandise Revenue </td>
+                <td> $3,102,618.14 </td>
+              </tr>
+              <tr>
+                <td> Total Revenue </td>
+                <td> $4,033,068.10 </td>
+              </tr>
+              <tr>
+                <td> VIP-related Revenue </td>
+                <td> $1,201,406.19 </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Our 10% collected from VIP/Suite sales per game: $1,201,406.19 * 10% = $120,140.62</p>
+          <p>MLB home team has 81 home games per season: 81 * $120,140.62 = $ 9,731,390.22</p>
+
+          <table>
+            <thead>
+                <tr>
+                   <th style= "text-align: center;" colspan="2"> NFL Estimates </th>
+                </tr>
+              </thead>
+            <thead>
+              <tr>
+                <th class='small'> Revenue Item </th>
+                <th class='medium'> Value </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Fans per game </td>
+                <td> 67,254 </td>
+              </tr>
+              <tr>
+                <td> Ticket Price </td>
+                <td> $151.00 </td>
+              </tr>
+              <tr>
+                <td> Ticket Revenue per Game </td>
+                <td> $7,000,000.00 </td>
+              </tr>
+              <tr>
+                <td> Food and Merchandise Revenue </td>
+                <td> $5,200,369.14 </td>
+              </tr>
+              <tr>
+                <td> Total Revenue </td>
+                <td> $12,200,369.14 </td>
+              </tr>
+              <tr>
+                <td> VIP-related Revenue </td>
+                <td> $1,716,121.82 </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Our 10% collected from VIP/Suite sales per game: $1,716,121.82 * 10% = $171,612.18</p>
+          <p>MLB home team has 81 home games per season: 8 * $171,612.18 = $1,372,897.44</p>
+
+        <h3 style="text-align: left">Future</h3>
+        <p>We will work with artists/musicians on tour and provide a subscription service model that fits their needs.The subscription price will be based on the amount of user data that needs to be collected and stored. There will be a standard charge for the equipment, such as for the bracelets and nodes.</p>
+    </div>
+    <div class='separator'>Costs Model</div>
+    <div class="container">
+    <h3 style="text-align: left">Infrastructure Cost</h3>
+    <p>The infrastructure set up cost is motivated by the need to place UWB anchors around the VIP suites in the venue. Our current estimates are calculated using Petco Park in San Diego as the example</p>
+    
+    <table>
+        <thead>
+            <tr>
+               <th style= "text-align: center;" colspan="2"> MLB Estimates - PETCO PARK </th>
+            </tr>
+          </thead>
+        <thead>
+          <tr>
+            <th class='small'> Cost Item </th>
+            <th class='medium'> Value </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> # of VIP suites </td>
+            <td> 75 </td>
+          </tr>
+          <tr>
+            <td> # of modules required </td>
+            <td> 20 tags + 8 anchors/gateways per suite</td>
+          </tr>
+          <tr>
+            <td> cost per module </td>
+            <td> $20 </td>
+          </tr>
+          <tr>
+            <td>total cost of hardware</td>
+            <td> $42000 </td>
+          </tr>
+          <tr>
+            <td> Installation </td>
+            <td> $4200 </td>
+          </tr>
+          <tr>
+            <td> Servers </td>
+            <td> $4800/year </td>
+          </tr> 
+          <tr>
+            <td> Maintenance </td>
+            <td> 10% hardware cost/year </td>
+          </tr>          
+        </tbody>
+      </table>
+      <p>The total initial cost of hardware with installation $42000 + $4200 = $46000 </p>
+      <p>Additional cost of maintenance of hardware and server maintenance $46000*10%/year + $4800/year = $9400/year </p>
+    </div>
+
+    <br><br>
+    <div class='container'>
+    <footer>
+        <p>2022 by Marcin Kierebinski</p>
+    </footer>
+    </div>
+  </body>
+</html>

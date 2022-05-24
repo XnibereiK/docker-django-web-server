@@ -169,18 +169,30 @@ color: var(--dark);
   }
 }
 
+@media (min-width: 50em){
+  .flex-2-grid{
+    display: flex;
+    gap: 3em;
+    flex: 1;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .btn{
   background: var(--light);  
 }
 
-.btn h3{
+.btn h4{
   text-align: center;
   color: var(--dark);
 }
 
-.btn h3:hover{
-  text-shadow: 0 0 0.6em var(--white), 0 0 1em var(--light); 
+.btn h4:hover{
+  text-shadow: 0 0 0.4em var(--white), 0 0 1em var(--white); 
   color: var(--white);
+
 }
 
 img {

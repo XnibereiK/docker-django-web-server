@@ -17,3 +17,6 @@ def product_ia(request):
 
 def product_interactions(request):
     return render(request, 'interactions.html')
+
+def business_model(request):
+    return render(request, 'business-model.html')

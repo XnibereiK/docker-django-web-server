@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Page Info -->
-    <title>Banglet - Bracelet with a BANG</title>
+    <title>Banglet - For a Better VIP Experience</title>
     <meta name="author" content="Marcin Kierebinski">
     <meta name="description" content="Banglet">
 
@@ -30,8 +30,8 @@
 
     <div class='container hero'>
       <section class='flex-grid'>
-      <div>
-        <h3>So... What is Banglet?</h3>
+      <div class = 'container'>
+        <h3 style="color: var(--dark) !important" >So... What is Banglet?</h3>
         <p>You see, venues are often looking for ways to improve the experience of attendees during events. Our solution takes a B2B perspective by targeting festival/concert venues as our customers and aiming to offer them access to VIP attendee location to enable services such as concierge (food and drink delivery). This would be achieved thanks to UWB technology that allows for precise tracking indoors. It can be leveraged to create a platform for attendees to be able to find people and navigate around venues easily. </p>
         <p>This could also enable a concierge-type service for VIPs (e.g. order food/drinks to be delivered directly). Friends before attending events can link their bracelets together and recorded information like location tracking will be communicated between phones and bracelets of the friends. Having all the necessary information stored on the bracelet would allow participants to not worry in case the phone battery dies, because payment, identification, and ticket access can be stored in the database for the attendee.</p>
         <p>This communication of data allows attendees to get the next-level hassle free and safe experience during the event. Adding custom skins we design will also allow users to feel more individualized at venues and be able to add another sense of fashion to attending events while promoting health and safety. After the concert it would essentially become a souvenir or a collectible item that would have unique designs for each of the festivals.</p>
@@ -39,50 +39,127 @@
       <img style="margin-top: 2em; margin-bottom: 2em"; src="{% static 'images/concert.jpg' %}">
       </section>
     </div>
+  <div class="flex-2-grid">
     <div style="margin-top: 4em"; class="container hero">
       <div class="btn">
-        <a href="/product/ui/"><h3 style='color: var(--dark) !important;'>User Interface</h3></a>
+        <a href="/product/ui/"><h4 style='color: var(--dark) !important;'>User Interface</h4></a>
       </div>
     </div>
     <div style="margin-top: 4em"; class="container hero">
       <div class="btn">
-        <a href="/product/ia/"><h3 style='color: var(--dark) !important;'>Information Architecture</h3></a>
+        <a href="/product/ia/"><h4 style='color: var(--dark) !important;'>Information Architecture</h4></a>
       </div>
     </div>
     <div style="margin-top: 4em"; class="container hero">
       <div class="btn">
-        <a href="/product/interactions/"><h3 style='color: var(--dark) !important;'>Interactions</h3></a>
+        <a href="/product/interactions/"><h4 style='color: var(--dark) !important;'>Interactions</h4></a>
       </div>
     </div>
+    <div style="margin-top: 4em"; class="container hero">
+      <div class="btn">
+        <a href="/product/business-model/"><h4 style='color: var(--dark) !important;'>Business Model</h4></a>
+      </div>
+    </div>
+  </div>
+
     <div class='separator'>Empathy Maps</div>
     <div class='container'>
+      <p>Empathy maps demonstrate our understanding of how our customers (Venues) and users (VIP attendees) will approach the product based on what they feel, thing, say, and do. They help our team establish the main pain points regarding current solutions, the potential risk areas whne it comes to our implementations and specific instances of situations where we can make a difference.</p>
       <img src="{% static 'images/customer_empathy_map.png' %}">
+      <br><br>
       <img src="{% static 'images/user_empathy_map.png' %}">
     </div>
+    <br><br>
+    <h1 class="container"> Features & Benefits </h1>
+    <div class='separator'>Kano Model Features List</div>
+    <div class="container">
+      <p>The Kano Model lists the features based on their importance to the user and therefore to us. We're starting with the most important functionality and go all the way to features that don't contribute to user satisfaction and may be detrimental to the project</p>
+    </div>
+    <div class="container">
+      <p>Basics - features all competitors include and everyone expects</p>
+      <div class="flex-2-grid">
+        <div>
+          <p>Dashboard with account overview. </p>
+        </div>
+          <p>They give the user an instant access to crucial information </p>
+        <div>
+          
+        </div>
+      </div>
+    </div>
 
-    <div class='separator'>Product Technical Considerations</div>
-      <div class='container'>
-      <p>We will be using UWB technology as well as bluetooth (BLE for communication with users phone, UWB can be set up with beacons around the venue and you can tell with .1m precision where the person is, much better than GPS performance-wise)</p>
-        <h4> Features </h4>
-        <ol>
-          <li> Track user location
+
+
+
+
+
+
+    <!-- <div class="flex-2-grid">
+      <p>Basics - features all competitors include and everyone expects</p>
+      <div class="container">
+              <>Dashboard with account overview. </p>
+              <p>They give the user an instant access to crucial information </p>
+
+
+              <li>Make the job of coordinating people together easier</li>
+              <li>No need to worry about multiple interfaces</li>
+              </ol>
+        <p>Hands-free experience</p>
+          <ol style="list-style-type: lower-alpha;">
+              <li>ID for purchases</li>
+              <li>Ticket info for access to restricted sections</li>
+              <li>Payment info</li>
+          </ol>
+      </div>
+      <div class="container">
+        <p>Effortless Finding</p>
+          <ol style="list-style-type: lower-alpha;">
+              <li>Have a better understanding of the situation at hand</li>
+              <li>Make the job of coordinating people together easier</li>
+              <li>No need to worry about multiple interfaces</li>
+              </ol>
+        <p>Hands-free experience</p>
+          <ol style="list-style-type: lower-alpha;">
+              <li>ID for purchases</li>
+              <li>Ticket info for access to restricted sections</li>
+              <li>Payment info</li>
+          </ol>
+      </div>
+    </div>
+
+    <div class='separator'>Hands-Free Experience</div>
+    <div class="flex-2-grid">
+        <div class="container">
+          <p>Effortless Finding</p>
             <ol style="list-style-type: lower-alpha;">
-                <li>Offering the concierge/food delivery service to VIP customers</li>
-                <li>Integrated with the indoors map (possibly)</li>
-                <li>Can be used to gather friends together if some are lost or want to regroup</li>
+                <li>Have a better understanding of the situation at hand</li>
+                <li>Make the job of coordinating people together easier</li>
+                <li>No need to worry about multiple interfaces</li>
                 </ol>
-          </li>
-          <li> Hands-free experience
+          <p>Hands-free experience</p>
             <ol style="list-style-type: lower-alpha;">
                 <li>ID for purchases</li>
                 <li>Ticket info for access to restricted sections</li>
                 <li>Payment info</li>
             </ol>
-          </li>
-          <li> Skins can be added to bracelets as an accessory to make the bracelet aesthetically interesting </li>
-        </ol>
-      </div>
-      <br><br>
+        </div>
+        <div class="container">
+          <p>Effortless Finding</p>
+            <ol style="list-style-type: lower-alpha;">
+                <li>Have a better understanding of the situation at hand</li>
+                <li>Make the job of coordinating people together easier</li>
+                <li>No need to worry about multiple interfaces</li>
+                </ol>
+          <p>Hands-free experience</p>
+            <ol style="list-style-type: lower-alpha;">
+                <li>ID for purchases</li>
+                <li>Ticket info for access to restricted sections</li>
+                <li>Payment info</li>
+            </ol>
+        </div>
+      </div> -->
+
+    <br><br>
     <div class='container'>
     <footer>
         <p>2022 by Marcin Kierebinski</p>

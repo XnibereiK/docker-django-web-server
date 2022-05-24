@@ -24,5 +24,6 @@ urlpatterns = [
     path('product/',views.product,name='product'),
     path('product/ui/',views.product_ui,name='product'),
     path('product/ia/',views.product_ia,name='product'),
-    path('product/interactions/',views.product_interactions,name='product')
+    path('product/interactions/',views.product_interactions,name='product'),
+    path('product/business-model/',views.business_model,name='product')
 ]
