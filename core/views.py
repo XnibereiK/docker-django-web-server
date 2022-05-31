@@ -20,3 +20,6 @@ def product_interactions(request):
 
 def business_model(request):
     return render(request, 'business-model.html')
+
+def iterations(request):
+    return render(request, 'iterations.html')

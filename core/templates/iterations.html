@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Banglet - For a Better VIP Experience</title>
+    <meta name="author" content="Marcin Kierebinski">
+    <meta name="description" content="User Interface">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dark-neons.css' %}">
+  </head>
+
+  <body>
+    <header>
+      <!-- <img src="{% static 'images/logo.png' %}" class="logo" > -->
+      <h1 class="container" >Banglet</h1>
+      <nav class="container">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/kvp/">KVP</a></li>
+              <li><a href="/product/">Product</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div class='container hero'>
+      <section class='flex-grid'>
+        <div class="container" >
+          <h3>Design Iterations</h3>
+          <p>Design is an iterative process. Okay, 'What does that really mean?', you may ask. Design is not just about business, or technology, or helping people, it's about all of this and much more. If you're reading this, it means you're likely one of our potential stakeholders. We need to make sure that we're addressing your needs as best as possible in an energy, cost, and time efficient way in the currnet technological setting, all that without sacrificing sustainability. It's not easy so we need to go over a bunch of ideas to hone in on a product that makes you want to interact with it.</p>
+        </div>
+        <div class="container">
+          <img style="margin-top: 2em; margin-bottom: 2em"; src="{% static 'images/HCD.png' %}">
+        </div>
+      </section>
+    </div>
+    
+    <div class='separator'>Pivot History</div>
+      <div class='container hero'>
+        <h4 style='color: var(--dark) !important;'>Replan, Redirect, or Retire (quote accessed from slidespace)</h4>
+        <p>"Are we making sufficient progress to believe that our original strategic hypothesis is correct, or do we need to make a major change? That change is called a pivot: a structured course correction designed to test a new fundamental hypothesis about the product, strategy, and engine of growth."</p>
+        <p>- Eric Ries, Author of 'The Lean Startup'</p>
+
+        <h4 style='color: var(--dark) !important;'>What IA Design Principles (Dan Brown) are important for your product?</h4>
+        <ol style='color: var(--dark) !important;'>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Zoom-Out Pivot</h5>
+            <p>Originally we were interested in offering a product that was designed for offering real time tracking for users at events. Help users find others that may be lost or for safety reasons. After some time we realized that the bigger product out of using real time tracking would be for collecting this data and offering this data to a user that would help them from a management perspective. From this we scoped out the individual users at venues to the people responsible for organizing the venues.</p>
+          </li>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Customer Segment Pivot</h5>
+            <p>Originally we were focused on attendees for venues to be our primary customers. This was because we figured that the people directly interacting with the hardware of the product should be the primary customer. Later we realized that there wasn’t enough of an incentive for the user to purchase the bracelet instantly upon the purchase of the product. This helped shift us to having the venue organizers as the customers instead. This is because by offering an interface for them to review the data and make decisions during and before events to improve the VIP experience will result in more profit for the venues.</p>
+          </li>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Customers Need Pivot</h5>
+            <p>Currently we are focused on displaying collected data mainly from VIP guest locations and interactions with services involving location of transactions and carrying out the transactions as well. In the future we might need to pivot to focusing on collecting and offering an interface for analyzing data in regards to the services themselves. This will be more defined based on us surveying more venue organizers and getting their judgments on our product for what best aligns with their needs.</p>
+          </li>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Platform Pivot</h5>
+            <p>Our original idea started with concerts and music festivals, as our primary platform to serve. The idea was people were going to use our product and services to stay connected with one another during concerts and festivals.</p>
+            <p>The second platform we pivoted to was that we were going to use our product and services to monitor the elderly, people who need to be supervised by caregivers.</p>
+            <p>Our last and final pivot is our current one, we are using our product and services to assist venues in providing a better VIP experience.</p>
+            <p>Currently we are creating a dashboard system that can show data visualizations based on queried data from our database. This includes attendance logs, transactions, location tracking, and list of events and related parameters.</p>
+            <p>In the future we could expand on our toolkit for data visualizations and apply machine learning to create predictive models based on the queried data to help guide the user to make better decisions for how to optimize their services for their VIP guests.</p>
+          </li>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Value Capture Pivot</h5>
+            <p>Originally we anticipated that we were going to sell the bracelets to customers directly and our revenue would come from the sale of the bracelets.</p>
+            <p>Our current pivot is that the bracelets are just a tool but rather our revenue will be generated from the aggregation of data and displaying the data for customers. We will be charging an ongoing service fee related to sales generated from the VIP. Revenue model is set now but could change later when we need to pivot and start serving unique customers. For example, music artists or other types of traveling entertainment, we would need services that do not reflect being fixed at one particular location. Their needs would be one that helps them travel and plan accordingly for a different venue multiple times a year. The current revenue model doesn't reflect this. For these customers, we would implement a subscription service tailored to fit their needs.</p>
+          </li>
+          <li style='color: var(--dark) !important;'>
+            <h5 style='color: var(--dark) !important;'>Channel Pivot</h5>
+            <p>Changed from selling bracelets to users to the organizers themselves and this is due to the fact that the true product that we are selling is organized and collected data. </p>
+            <p>Currently we are focused on high end sports venues. This is a very select population of customers. We would need to contact these customers by directly reaching out to them or have connections with people that can refer us to them.</p>
+            <p>In the future we may be interested in offering our services to other types of venue organizers outside of sports like music artists and other types of venues generally. These customers are a lot broader and we need to get exposure to them through advertising on social media platforms and telecommunications since this is a broader scope of venue organizers to appeal to.</p>
+          </li>
+        </ol>
+      </div>
+
+
+    <div class='container'>
+      <footer>
+        <div class = "flex-2-grid">
+          <p>2022 by Marcin Kierebinski</p>
+  
+          <div style='display:inline;'>
+            <a href=https://www.linkedin.com/in/marcin-kierebinski-a56676167>
+              <img style="width: 3rem; padding: 1rem; margin: 0;" src="{% static 'images/linkedin_logo.png' %}">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
